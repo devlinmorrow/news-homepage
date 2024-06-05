@@ -12,7 +12,8 @@
 body {
     background-color: var(--off-white);
 }
-nav {
+
+.nav {
 
 }
 
@@ -20,20 +21,34 @@ article h2 {
     color: var(--soft-red);
 }
 
-button {
-    background-color: var(--soft-red);
-}
-
-.header {
-    grid-area: header;
-}
 
 main {
     display: grid;
     grid-template-areas:
-        "header header header"
-        "main main main"
-        "hey hey hey";
+        "headline  new"
+        "top  top";
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: 50px 200px 50px;
+    grid-template-rows: repeat(2, 1fr);
 }
+
+
+.headline {
+    grid-area: headline;
+    background-color: aliceblue;
+}
+
+button {
+    background-color: var(--soft-red);
+}
+
+.new {
+    grid-area: new;
+    background-color: pink;
+}
+
+.top {
+    grid-area: top;
+    background-color: darkseagreen;
+}
+
+
