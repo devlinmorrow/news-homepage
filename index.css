@@ -26,14 +26,13 @@ main {
     display: grid;
     grid-template-areas:
         "headline  new"
-        "top  top";
+        "top       top";
     grid-template-columns: 2fr 1fr;
     grid-template-rows: repeat(2, 1fr);
 }
 
 
 .headline {
-    grid-area: headline;
     background-color: aliceblue;
 }
 
@@ -49,6 +48,9 @@ button {
 .top {
     grid-area: top;
     background-color: darkseagreen;
+    display: grid;
+    grid-template-areas: "one two three";
+    grid-template-columns: repeat(3, 1fr);
 }
 
 
