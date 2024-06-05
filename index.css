@@ -23,3 +23,17 @@ article h2 {
 button {
     background-color: var(--soft-red);
 }
+
+.header {
+    grid-area: header;
+}
+
+main {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "main main main"
+        "hey hey hey";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 50px 200px 50px;
+}
