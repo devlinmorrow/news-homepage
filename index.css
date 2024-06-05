@@ -1,0 +1,25 @@
+@property --off-white {
+    syntax: "<color>";
+    initial-value: hsl(36, 100%, 99%);
+    inherits: false;
+}
+@property --soft-red {
+    syntax: "<color>";
+    initial-value: hsl(5, 85%, 63%);
+    inherits: false;
+}
+
+body {
+    background-color: var(--off-white);
+}
+nav {
+
+}
+
+article h2 {
+    color: var(--soft-red);
+}
+
+button {
+    background-color: var(--soft-red);
+}
