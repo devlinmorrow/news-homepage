@@ -57,22 +57,22 @@ button {
         grid-template-columns: 1fr 2fr;
 
         img {
-            height: 200px;
-            width: 200px;
+            width: 120px;
         }
 
         @media (max-width: 768px) {
             img {
-                height: 100px;
-                width: 100px;
+                height: auto;
+                max-width: 100%;
             }
         }
 
-        @media (max-width: 480px) {
-            img {
-                height: 50px;
-                width: 50px
-            }
-        }
+        /*@media (max-width: 480px) {*/
+        /*    img {*/
+        /*        height: auto;*/
+        /*        width: 100%;*/
+
+        /*    }*/
+        /*}*/
     }
 }
