@@ -51,6 +51,28 @@ button {
     display: grid;
     grid-template-areas: "one two three";
     grid-template-columns: repeat(3, 1fr);
+
+    article {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+
+        img {
+            height: 200px;
+            width: 200px;
+        }
+
+        @media (max-width: 768px) {
+            img {
+                height: 100px;
+                width: 100px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            img {
+                height: 50px;
+                width: 50px
+            }
+        }
+    }
 }
-
-
