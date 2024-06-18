@@ -8,9 +8,19 @@
     initial-value: hsl(5, 85%, 63%);
     inherits: false;
 }
+@font-face {
+    font-family: myFirstFont;
+    src: url('./assets/fonts/Inter-VariableFont_slnt,wght.ttf');
+}
+
 
 body {
+    font-family: myFirstFont;
     background-color: var(--off-white);
+}
+
+p {
+    font-size: 16px;
 }
 
 .nav {
