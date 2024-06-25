@@ -19,6 +19,7 @@ body {
     background-color: var(--off-white);
     padding: 32px 40px;
     box-sizing: border-box;
+    max-width: 920px;
 }
 
 p {
@@ -46,9 +47,15 @@ main {
 
 .headline {
     background-color: aliceblue;
+    display: grid;
+    grid-template-areas:
+        "headline-img  headline-img"
+        "title  preview";
+    grid-template-rows: 1.5fr 1fr;
 }
 
 .headline img {
+    grid-area: headline-img;
     width: 100%;
 }
 
@@ -68,18 +75,19 @@ button {
     grid-auto-flow: row;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 
+article {
+    display: grid;
+    grid-template-columns: 120px auto;
+    gap: 20px;
+
+img {
+    width: 120px;
+}
+
+@media (max-width: 768px) {
     article {
-        display: grid;
-        grid-template-columns: 120px auto;
-        gap: 20px;
-
-        img {
-            width: 120px;
-        }
-
-        @media (max-width: 768px) {
-            article {
-            }
-        }
     }
+}
+
+}
 }
