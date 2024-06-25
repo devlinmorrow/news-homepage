@@ -17,6 +17,8 @@
 body {
     font-family: myFirstFont;
     background-color: var(--off-white);
+    padding: 32px 40px;
+    box-sizing: border-box;
 }
 
 p {
@@ -44,6 +46,12 @@ main {
 
 .headline {
     background-color: aliceblue;
+}
+
+.headline-image {
+    background-image: url('./assets/images/image-web-3-desktop.jpg');
+    width: 100px;
+    height: 100px;
 }
 
 button {
