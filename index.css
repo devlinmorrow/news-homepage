@@ -48,10 +48,8 @@ main {
     background-color: aliceblue;
 }
 
-.headline-image {
-    background-image: url('./assets/images/image-web-3-desktop.jpg');
-    width: 100px;
-    height: 100px;
+.headline img {
+    width: 100%;
 }
 
 button {
