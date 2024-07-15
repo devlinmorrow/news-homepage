@@ -69,9 +69,9 @@ main {
     background-color: aliceblue;
     display: grid;
     grid-template-areas:
-        "headline-img  headline-img"
-        "title  preview";
-    grid-template-rows: 1.5fr 1fr;
+        "headline-img"
+        "title"
+        "preview";
 }
 
 .headline img {
@@ -96,18 +96,31 @@ button {
     grid-auto-flow: row;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 16px;
-
-article {
-    display: grid;
-    grid-template-columns: 120px auto;
-    gap: 20px;
-
-img {
-    width: 120px;
 }
 
-@media (max-width: 768px) {
-    article {
+article {
+    img {
+        width: 120px;
     }
 }
 
+@media (min-width: 960px) {
+    .headline {
+        grid-template-areas:
+            "headline-img  headline-img"
+            "title  preview";
+        grid-template-rows: 1.5fr 1fr;
+    }
+}
+
+@media (max-width: 978px) {
+    main {
+        display: grid;
+        grid-template-areas:
+            "headline"
+            "new"
+            "top";
+        gap: 16px;
+        grid-template-columns: 1fr;
+    }
+}
