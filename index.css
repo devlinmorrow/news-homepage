@@ -60,7 +60,6 @@ main {
         "headline  new"
         "top       top";
     grid-template-columns: 2fr 1fr;
-    grid-template-rows: repeat(2, 1fr);
     gap: 16px;
 }
 
@@ -96,11 +95,15 @@ button {
     grid-auto-flow: row;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 16px;
-}
 
-article {
-    img {
-        width: 120px;
+    article {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+
+        img {
+            height: 150px;
+        }
     }
 }
 
