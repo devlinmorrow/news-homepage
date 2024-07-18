@@ -57,16 +57,17 @@ article h2 {
 main {
     display: grid;
     grid-template-areas:
-        "headline  new"
-        "top       top";
-    grid-template-columns: 2fr 1fr;
+    "headline  headline new"
+    "top       top      top";
+    grid-template-columns: repeat(3, 1fr);
     gap: 16px;
 }
 
 
 .headline {
-    background-color: aliceblue;
+    grid-area: headline;
     display: grid;
+    gap: 16px;
     grid-template-areas:
         "headline-img"
         "title"
@@ -84,13 +85,13 @@ button {
 
 .new {
     grid-area: new;
-    background-color: pink;
+    background-color: black;
+    color: white;
     padding-inline: 16px;
 }
 
 .top {
     grid-area: top;
-    background-color: darkseagreen;
     display: grid;
     grid-auto-flow: row;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
