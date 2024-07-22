@@ -45,6 +45,7 @@ p {
 .nav {
     display: flex;
     gap: 25px;
+    flex-wrap: wrap; /* TODO: Temp solution */
 
     a {
         text-decoration: none;
@@ -63,7 +64,7 @@ main {
     "headline  headline new"
     "top       top      top";
     grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+    gap: 32px 16px;
 }
 
 
@@ -90,10 +91,14 @@ button {
     grid-area: new;
     background-color: black;
     color: white;
-    padding-inline: 16px;
+    padding: 24px 16px;
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
-.top {
+.trending {
     grid-area: top;
     display: grid;
     grid-auto-flow: row;
@@ -105,6 +110,7 @@ button {
         gap: 15px;
         img {
             height: 150px;
+            max-width: min(100px, 100%); /* TODO: come back to this. Width or max width? */
         }
         
         div {
