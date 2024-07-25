@@ -51,6 +51,19 @@ p {
         text-decoration: none;
         color: gray;
     }
+
+    ul {
+        display: none;
+    }
+
+    @media (min-width: 760px) {
+        img {
+            display: none;
+        }
+        ul {
+            display: flex;
+        }
+    }
 }
 
 article h2 {
