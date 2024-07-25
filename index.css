@@ -43,10 +43,6 @@ p {
 }
 
 .nav {
-    display: flex;
-    gap: 25px;
-    flex-wrap: wrap; /* TODO: Temp solution */
-
     a {
         text-decoration: none;
         color: gray;
@@ -54,14 +50,20 @@ p {
 
     ul {
         display: none;
+
+        li {
+            list-style: none;
+        }
     }
 
     @media (min-width: 760px) {
         img {
             display: none;
         }
+
         ul {
             display: flex;
+            gap: 24px;
         }
     }
 }
@@ -89,6 +91,13 @@ main {
         "headline-img"
         "title"
         "preview";
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
 }
 
 .headline img {
@@ -120,7 +129,7 @@ button {
 
     article {
         display: flex;
-        gap: 15px;
+        gap: 16px;
         img {
             height: 150px;
             max-width: min(100px, 100%); /* TODO: come back to this. Width or max width? */
