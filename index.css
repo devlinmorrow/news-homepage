@@ -33,9 +33,10 @@ body {
 
 .mobile-menu {
     display: flex;
+    justify-content: space-between;
+    width: 200px;
     position: fixed;
     border: 1px solid red;
-    height: 200px;
     z-index: 100;
     right: 2px;
     top: 0;
@@ -51,7 +52,7 @@ body {
         flex-direction: column;
         gap: 16px;
         list-style: none;
-        padding-left: 0;
+        padding: 60px 0 20px 0;
     }
 }
 
