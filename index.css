@@ -17,6 +17,15 @@
     margin: 0;
 }
 
+.logo {
+    margin-left: 0;
+    transition: margin-left 1s ease-in-out;
+
+    &:hover {
+        margin-left: 30px;
+    }
+}
+
 body {
     font-family: myFirstFont;
     background-color: var(--off-white);
@@ -37,11 +46,13 @@ body {
     width: 200px;
     position: fixed;
     border: 1px solid red;
+    opacity: 1;
     z-index: 100;
     right: 2px;
     top: 0;
     background-color: white;
     padding: 20px 16px;
+    transition: right 0.5s cubic-bezier(.29, 1.01, 1, -0.68);
 
     img {
         height: 40px;
@@ -58,6 +69,10 @@ body {
     @media (min-width: 760px) {
         display: none;
     }
+
+    &.mobile-menu-closed {
+        right: -234px;
+    }
 }
 
 p {
@@ -73,10 +88,6 @@ p {
 
 .hamburger, .close-image {
     cursor: pointer;
-}
-
-.mobile-menu-closed {
-    display: none;
 }
 
 .nav {
