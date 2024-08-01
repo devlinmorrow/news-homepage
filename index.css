@@ -67,6 +67,14 @@ p {
     margin-bottom: 20px;
 }
 
+.hamburger, .close-image {
+    cursor: pointer;
+}
+
+.mobile-menu-closed {
+    display: none;
+}
+
 .nav {
     a {
         text-decoration: none;
